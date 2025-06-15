@@ -2,66 +2,98 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Accueil – Caviar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Club Caviar - Mines Albi</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <header>
-    <div class="logo"><a href="index.html"><img src="images/logo.jpg" alt="Logo Caviar" /></a></div>
-    <nav>
-      <ul>
-        <li><a href="#hero">Accueil</a></li>
-        <li><a href="#section-qui">Qui sommes-nous</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="galerie.html">Galerie</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+  <div class="logo">
+    <a href="index.html"><img src="images/logo.jpg" alt="Logo Caviar" /></a>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#hero">Accueil</a></li>
+      <li><a href="#qui-sommes-nous">Qui sommes-nous</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <section id="hero">
-    <div class="carousel">
-      <div class="slide slide1"></div>
-      <div class="slide slide2"></div>
-      <div class="slide slide3"></div>
+<section id="hero" class="section-hero">
+  <div class="hero-background"></div>
+  <div class="hero-content">
+    <img src="images/logo.jpg" alt="Logo Club Caviar" class="hero-logo" />
+    <h1>Club Caviar</h1>
+    <p>Le club photo des Mines Albi</p>
+  </div>
+</section>
+
+<main>
+  <section id="qui-sommes-nous" class="section section-left fade-in">
+    <div class="text">
+      <h2>Qui sommes-nous ?</h2>
+      <p>Le Club Caviar est une association photo dynamique qui immortalise les événements de Mines Albi...</p>
     </div>
-    <div class="hero-content">
-      <img src="images/logo.jpg" alt="Logo Caviar" class="hero-logo" />
-      <h1>Club Caviar</h1>
+    <div class="image">
+      <img src="images/club_photo1.jpg" alt="Photo du club" />
     </div>
   </section>
 
-  <main>
-    <section id="section-qui" class="animate-section">
-      <h2>Qui sommes-nous ?</h2>
-      <p>Caviar, le club photo des Mines Albi, couvre les événements de l’école...</p>
-    </section>
-
-    <section class="link-section animate-section">
+  <section class="section section-right fade-in">
+    <div class="image">
+      <img src="images/portfolio_preview.jpg" alt="Portfolio preview" />
+    </div>
+    <div class="text">
       <h2>Portfolio</h2>
-      <a class="cta" href="portfolio.html">Voir le portfolio</a>
-    </section>
+      <p>Découvrez nos meilleures photos prises au fil des événements.</p>
+      <a href="portfolio.html" class="btn-primary">Voir le portfolio</a>
+    </div>
+  </section>
 
-    <section class="link-section animate-section">
+  <section class="section section-left fade-in">
+    <div class="text">
       <h2>Galerie</h2>
-      <a class="cta" href="galerie.html">Voir la galerie</a>
-    </section>
+      <p>Une galerie riche et variée pour explorer notre univers photographique.</p>
+      <a href="galerie.html" class="btn-primary">Voir la galerie</a>
+    </div>
+    <div class="image">
+      <img src="images/galerie_preview.jpg" alt="Galerie preview" />
+    </div>
+  </section>
 
-    <section class="link-section animate-section">
+  <section class="section section-right fade-in">
+    <div class="image">
+      <img src="images/services_preview.jpg" alt="Services preview" />
+    </div>
+    <div class="text">
       <h2>Services</h2>
-      <a class="cta" href="services.html">Nos services</a>
-    </section>
+      <p>Nous proposons divers services photo adaptés à vos besoins.</p>
+      <a href="services.html" class="btn-primary">Nos services</a>
+    </div>
+  </section>
 
-    <section class="link-section animate-section">
+  <section class="section section-left fade-in contact-section">
+    <div class="text">
       <h2>Contact</h2>
-      <a class="cta" href="contact.html">Nous contacter</a>
-    </section>
-  </main>
+      <p>Vous souhaitez en savoir plus ou nous contacter ?</p>
+      <a href="contact.html" class="btn-primary">Nous contacter</a>
+    </div>
+    <div class="image">
+      <img src="images/contact_preview.jpg" alt="Contact preview" />
+    </div>
+  </section>
+</main>
 
-  <script src="js/script.js"></script>
+<footer>
+  <p>© 2025 Club Caviar - Mines Albi</p>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
