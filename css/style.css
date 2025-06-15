@@ -59,7 +59,7 @@ nav a:hover {
 .hero-background {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-image: url('../images/collage.jpg'); /* ton collage photos */
+  background-image: url('../images/collage.jpg');
   background-size: cover;
   background-position: center;
   filter: brightness(0.35);
@@ -83,7 +83,7 @@ nav a:hover {
 .section-hero h1 {
   font-size: 4rem;
   margin: 0 0 10px;
-  color: #F36F21; /* orange */
+  color: #F36F21;
   text-shadow: 0 2px 10px rgba(0,0,0,0.6);
 }
 .section-hero p {
@@ -98,7 +98,6 @@ main {
   margin: auto;
   padding: 60px 20px;
 }
-
 .section {
   display: flex;
   align-items: center;
@@ -106,44 +105,26 @@ main {
   gap: 40px;
   margin-bottom: 80px;
 }
-
-.section-left .text {
-  order: 1;
-}
-.section-left .image {
-  order: 2;
-}
-.section-right .text {
-  order: 2;
-}
-.section-right .image {
-  order: 1;
-}
+.section-left .text { order: 1; }
+.section-left .image { order: 2; }
+.section-right .text { order: 2; }
+.section-right .image { order: 1; }
 
 .text {
   flex: 1;
   max-width: 600px;
   text-align: center;
-  /* Animation scroll */
+
+  /* Animation init */
   opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transform: translateY(50px);
+  transition: opacity 0.7s ease-out, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .text.visible {
   opacity: 1;
   transform: translateY(0);
 }
-.text h2 {
-  font-size: 2.5rem;
-  color: #F36F21;
-  margin-bottom: 15px;
-}
-.text p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #333;
-  margin-bottom: 20px;
-}
+
 .image {
   flex: 1;
   max-width: 550px;
@@ -156,14 +137,15 @@ main {
   height: auto;
 }
 
-/* Buttons */
+/* Boutons */
 .btn-primary {
   display: inline-block;
   padding: 14px 40px;
-  background-color: #00AEEF; /* bleu clair IMT */
+  background-color: #00AEEF; /* bleu IMT */
   color: white;
   font-weight: 700;
   border-radius: 15px;
+  margin-top: 15px;
   transition: background-color 0.3s;
 }
 .btn-primary:hover {
@@ -173,7 +155,8 @@ main {
 /* Footer */
 footer {
   text-align: center;
-  padding: 20px 0;
-  color: #666;
+  padding: 30px 0;
+  background: #f8f8f8;
+  color: #555;
   font-size: 0.9rem;
 }
