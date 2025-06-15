@@ -1,15 +1,97 @@
 const albums = {
-  "2023-2024": {
-    "Marché de Noël": {
-      "Portraits": "https://photos.app.goo.gl/EXEMPLE1",
-      "Stands": "https://photos.app.goo.gl/EXEMPLE2"
-    },
-    "Course inter-écoles": "https://photos.app.goo.gl/EXEMPLE3"
-  },
   "2022-2023": {
-    "Remise des diplômes": "https://photos.app.goo.gl/EXEMPLE4"
+    "Meuh d'aurevoir aux M1 - 07/04/2023": "",
+    "Meuh Pré-Cartel BDS x Supporter": "",
+    "AW x Meuh Schroumpfs": "",
+    "30 ans de l'EMAC - 01/06/23": "",
+    "AW I2D French x American - 12/06/23": "",
+    "ABC": "",
+    "Meuh César": "",
+    "Photos Cartel 2023": ""
+  },
+
+  "2023-2024": {
+    "Pompoms": "",
+    "Vidéos de familles": "",
+    "Intervilles": "",
+    "Meuh BDE d'inté": "",
+    "AW - Partenariat Judo": "",
+    "AW I2D": "",
+    "Meuh BDA 09/09": "",
+    "AW Les Savanturiers": "",
+    "AW JIMAxCaviar": "",
+    "Cross": "",
+    "Meuh BTP": "",
+    "BTP": "",
+    "Meuh Club Supporter (France-Italie)": "",
+    "BumbAlbi 14/10/23": "",
+    "WEI": "",
+    "Meuh Halloween": "",
+    "TTF": "",
+    "GALA 2023": "",
+    "Meuh Savanturiers": "",
+    "OVNI": "",
+    "ASG": "",
+    "AW X Meuh de Noël 16/12": "",
+    "Meuh S2D": "",
+    "Les Berges Sonores": "",
+    "DESINTE": "",
+    "HACKATARN": "",
+    "Challenge du mineur": "",
+    "Campagnes": "",
+    "Meuh Club Supporters": "",
+    "Tournois de TD": "",
+    "AW Diversité BDA": "",
+    "AW Palets & Terroirs x Diversité": "",
+    "Meuh Cirque BDA": "",
+    "Sortie Canoë": "",
+    "ABC": "",
+    "Fête de la musique": "",
+    "Relais Caritatif": "",
+    "Meuh JIMA": "",
+    "César": ""
+  },
+
+  "2024-2025": {
+    "Meuh d’inté": "",
+    "Meuh BDA Dessins Animés": "",
+    "AW BDA Laser game": "",
+    "WEI 2024": "",
+    "AW Savanturiers": "",
+    "AW Jima": "",
+    "AW Challenge": "",
+    "AW BDE": "",
+    "AW Thérèse": "",
+    "Black BumbAlbi": "",
+    "BTP²": "",
+    "Club supporter": "",
+    "Meuh Halloween BDA": "",
+    "Meuh O.V.N.I.": "",
+    "TTF": "",
+    "GALA": "",
+    "Soirée All Campus SNA": "",
+    "Meuh ASG": "",
+    "Meuh Sport d'hiver": "",
+    "Meuh de Noel": "",
+    "AW Breton": "",
+    "Meuh I2D": "",
+    "Meuh Poké mines": "",
+    "Meuh": "",
+    "Meuh Saint Valentin": "",
+    "Meuh Supporter": "",
+    "Challenge du mineur": "",
+    "Campagnes": "",
+    "Départ des MI": "",
+    "Show pompon": "",
+    "BDS x Club Supporter": "",
+    "Meuh Paquza": "",
+    "Meuh Lu'Mines'escence": "",
+    "AW Americain": "",
+    "ABC": "",
+    "Meuh Cinéma": ""
   }
 };
+
 
 const container = document.getElementById('albums-container');
 
