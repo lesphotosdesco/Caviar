@@ -1,15 +1,4 @@
-// Scroll animation
-document.addEventListener('DOMContentLoaded', () => {
-  const fadeElems = document.querySelectorAll('.fade-in');
+// Pas d'animation scroll, script vide ou minimal
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.3 });
-
-  fadeElems.forEach(elem => observer.observe(elem));
-});
+// Exemple : menu highlight ou autre si besoin
+// Pour l'instant, rien, tu peux l'adapter plus tard.
