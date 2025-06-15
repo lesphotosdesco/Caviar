@@ -1,24 +1,144 @@
 /* Structure de base */
-body, html { margin:0;padding:0; scroll-behavior:smooth; font-family:'Montserrat',sans-serif; color:#1E1E1E; }
-header { position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;padding:15px 30px;background:#fff;z-index:10;box-shadow:0 2px 4px rgba(0,0,0,0.1); }
-.logo img{height:50px;} nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0;}
-nav a{color:#1E1E1E;text-decoration:none;font-weight:700;transition:color .3s;} nav a:hover{color:#F36F21;}
+body, html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+  color: #1E1E1E;
+  background: #fff;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #fff;
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #1E1E1E;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color .3s;
+}
+
+nav a:hover {
+  color: #F36F21; /* orange */
+}
 
 /* HERO: Carrousel + overlay */
-#hero{position:relative;height:100vh;overflow:hidden;}
-.carousel{height:100%;position:absolute;top:0;left:0;width:300%;display:flex;transition:transform 1s ease;}
-.slide {flex:1;background-size:cover;background-position:center;}
-.slide1{background-image:url('../images/slide1.jpg');}
-.slide2{background-image:url('../images/slide2.jpg');}
-.slide3{background-image:url('../images/slide3.jpg');}
-.hero-content{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,0.5);}
-.hero-content .hero-logo{width:150px;margin-bottom:20px;} .hero-content h1{font-size:3em;color:#F36F21;}
+#hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.carousel {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300%;
+  display: flex;
+  transition: transform 1s ease;
+}
+
+.slide {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide1 {
+  background-image: url('../images/slide1.jpg');
+}
+
+.slide2 {
+  background-image: url('../images/slide2.jpg');
+}
+
+.slide3 {
+  background-image: url('../images/slide3.jpg');
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.hero-content .hero-logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  color: #F36F21; /* orange */
+}
 
 /* Sections */
-main {padding:50px 20px;}
-.animate-section{opacity:0;transform:translateY(50px);transition:opacity .8s ease,transform .8s ease;}
-.animate-section.visible{opacity:1;transform:translateY(0);}
-link-section, .animate-section{text-align:center;margin-bottom:60px;}
-.link-section h2{color:#F36F21;margin-bottom:15px;}
-.cta{display:inline-block;padding:10px 20px;background-color:#00AEEF;color:#fff;border-radius:8px;text-decoration:none;font-weight:700;transition:background-color .3s;}
-.cta:hover{background-color:#007fa5;}
+main {
+  padding: 50px 20px;
+}
+
+.animate-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity .8s ease, transform .8s ease;
+  min-height: 200px; /* pour s'assurer que la section a une hauteur visible */
+}
+
+.animate-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.link-section, .animate-section {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.link-section h2 {
+  color: #F36F21; /* orange */
+  margin-bottom: 15px;
+}
+
+.cta {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00AEEF; /* bleu clair IMT */
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background-color .3s;
+}
+
+.cta:hover {
+  background-color: #007fa5; /* bleu plus foncé */
+}
