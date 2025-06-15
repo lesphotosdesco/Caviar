@@ -97,36 +97,16 @@ main {
   max-width: 1200px;
   margin: auto;
   padding: 60px 20px;
-  background: #fff;
 }
 
-/* Section wrapper */
 .section {
   display: flex;
   align-items: center;
-  justify-content: center; /* CENTRAGE des sections */
+  justify-content: space-between;
   gap: 40px;
   margin-bottom: 80px;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all 0.8s ease-out;
-  background: #fff;
-  padding: 40px 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.07);
-  flex-wrap: wrap;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-/* On visible */
-.section.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Alternance gauche-droite */
 .section-left .text {
   order: 1;
 }
@@ -140,11 +120,10 @@ main {
   order: 1;
 }
 
-/* Text and image styles */
 .text {
-  flex: 1 1 400px;
+  flex: 1;
   max-width: 600px;
-  text-align: center; /* <-- Centrer texte */
+  text-align: center;
 }
 .text h2 {
   font-size: 2.5rem;
@@ -158,7 +137,7 @@ main {
   margin-bottom: 20px;
 }
 .image {
-  flex: 1 1 350px;
+  flex: 1;
   max-width: 550px;
 }
 .image img {
@@ -169,57 +148,24 @@ main {
   height: auto;
 }
 
-/* Boutons / CTA */
+/* Buttons */
 .btn-primary {
   display: inline-block;
   padding: 14px 40px;
   background-color: #00AEEF; /* bleu clair IMT */
   color: white;
   font-weight: 700;
-  border-radius: 15px;  /* arrondi marqué */
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-  user-select: none;
-  box-shadow: 0 5px 15px rgba(0,174,239,0.4);
+  border-radius: 15px;
+  transition: background-color 0.3s;
 }
 .btn-primary:hover {
   background-color: #007fa5;
 }
 
-/* Nouveau style pour les liens en cases rectangulaires arrondies en orange */
-.cta-orange {
-  display: inline-block;
-  padding: 14px 40px;
-  background-color: #F36F21; /* orange */
-  color: white;
-  font-weight: 700;
-  border-radius: 15px;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-  user-select: none;
-  box-shadow: 0 5px 15px rgba(243,111,33,0.4);
+/* Footer */
+footer {
   text-align: center;
-}
-.cta-orange:hover {
-  background-color: #b9530d;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .section {
-    flex-direction: column;
-    padding: 30px 15px;
-  }
-  .text, .image {
-    max-width: 100%;
-  }
-  .section h2 {
-    font-size: 2rem;
-  }
-  .section p {
-    font-size: 1rem;
-  }
-  .section-hero h1 {
-    font-size: 3rem;
-  }
+  padding: 20px 0;
+  color: #666;
+  font-size: 0.9rem;
 }
