@@ -10,12 +10,11 @@
 <body>
 
   <header>
-    <div class="logo">
-      <a href="index.html"><img src="images/logo.png" alt="Logo Caviar" /></a>
-    </div>
+    <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Logo Caviar" /></a></div>
     <nav>
       <ul>
-        <li><a href="index.html">Accueil</a></li>
+        <li><a href="#hero">Accueil</a></li>
+        <li><a href="#section-qui">Qui sommes-nous</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="galerie.html">Galerie</a></li>
         <li><a href="services.html">Services</a></li>
@@ -24,40 +23,41 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="overlay">
+  <section id="hero">
+    <div class="carousel">
+      <div class="slide slide1"></div>
+      <div class="slide slide2"></div>
+      <div class="slide slide3"></div>
+    </div>
+    <div class="hero-content">
+      <img src="images/logo.png" alt="Logo Caviar" class="hero-logo" />
       <h1>Club Caviar</h1>
-      <p>Le club photo des Mines Albi</p>
     </div>
   </section>
 
   <main>
-    <section class="intro">
+    <section id="section-qui" class="animate-section">
       <h2>Qui sommes-nous ?</h2>
-      <p>Caviar est le club photo de l’IMT Mines Albi. Nous couvrons les événements de l’école et proposons des services photos aux assos et étudiants.</p>
+      <p>Caviar, le club photo des Mines Albi, couvre les événements de l’école...</p>
     </section>
 
-    <section class="link-section">
+    <section class="link-section animate-section">
       <h2>Portfolio</h2>
-      <p>Découvrez notre sélection des plus beaux clichés.</p>
       <a class="cta" href="portfolio.html">Voir le portfolio</a>
     </section>
 
-    <section class="link-section">
+    <section class="link-section animate-section">
       <h2>Galerie</h2>
-      <p>Retrouvez les albums photos classés par année et événements.</p>
       <a class="cta" href="galerie.html">Voir la galerie</a>
     </section>
 
-    <section class="link-section">
+    <section class="link-section animate-section">
       <h2>Services</h2>
-      <p>Nous proposons des prestations photo pour vos événements, portraits, etc.</p>
       <a class="cta" href="services.html">Nos services</a>
     </section>
 
-    <section class="link-section">
+    <section class="link-section animate-section">
       <h2>Contact</h2>
-      <p>Envie de collaborer avec nous ou de rejoindre le club ?</p>
       <a class="cta" href="contact.html">Nous contacter</a>
     </section>
   </main>
