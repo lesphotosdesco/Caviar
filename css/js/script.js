@@ -1,16 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const sections = document.querySelectorAll('.section');
+// Pas d'animation scroll, script vide ou minimal
 
-  const observer = new IntersectionObserver((entries, obs) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        obs.unobserve(entry.target);
-      }
-    });
-  }, {
-    threshold: 0.2
-  });
-
-  sections.forEach(section => observer.observe(section));
-});
+// Exemple : menu highlight ou autre si besoin
+// Pour l'instant, rien.
