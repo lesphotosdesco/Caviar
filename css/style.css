@@ -37,7 +37,7 @@ nav ul {
 }
 nav a {
   font-weight: 700;
-  color: #1E1E1E;
+  color: ##121212;
   transition: color 0.3s;
 }
 nav a:hover {
