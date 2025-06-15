@@ -110,6 +110,12 @@ main {
   transition: all 0.8s ease-out;
 }
 
+/* Center content container for text + image */
+.centered-content {
+  justify-content: center !important;
+}
+
+/* On visible */
 .section.visible {
   opacity: 1;
   transform: translateY(0);
@@ -133,6 +139,7 @@ main {
 .text {
   flex: 1;
   max-width: 600px;
+  text-align: center; /* <-- Centrer texte */
 }
 .text h2 {
   font-size: 2.5rem;
@@ -160,49 +167,8 @@ main {
 /* Buttons */
 .btn-primary {
   display: inline-block;
-  padding: 12px 30px;
+  padding: 14px 40px;
   background-color: #00AEEF; /* bleu clair IMT */
   color: white;
   font-weight: 700;
-  border-radius: 50px;
-  transition: background-color 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0, 174, 239, 0.5);
-}
-.btn-primary:hover {
-  background-color: #007fa5;
-  box-shadow: 0 6px 20px rgba(0, 127, 165, 0.7);
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-  .section {
-    flex-direction: column;
-  }
-  .section-left .text, .section-left .image,
-  .section-right .text, .section-right .image {
-    order: unset;
-  }
-  .text, .image {
-    max-width: 100%;
-  }
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 30px 20px;
-  background: #f7f7f7;
-  color: #666;
-  font-size: 0.9rem;
-}
-
-/* Scroll animation class (JS) */
-.fade-in {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+  border-radius: 15px;  /* arrondi plus marqué
