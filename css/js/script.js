@@ -1,24 +1,29 @@
-// Carrousel automatique du hero
-let index = 0;
-const carousel = document.querySelector('.hero-carousel');
-const slides = document.querySelectorAll('.slide');
+console.log("JS chargé");
 
-function nextSlide() {
-  index = (index + 1) % slides.length;
-  carousel.style.transform = `translateX(-${index * 100}%)`;
-}
-setInterval(nextSlide, 5000);
+document.addEventListener('DOMContentLoaded', () => {
+  // Carrousel auto slide
+  const carousel = document.querySelector('.carousel');
+  const slides = document.querySelectorAll('.slide');
+  let index = 0;
 
-// Apparition au scroll
-const sections = document.querySelectorAll('.section');
+  function nextSlide() {
+    index = (index + 1) % slides.length;
+    carousel.style.transform = `translateX(-${index * (100 / slides.length)}%)`;
+  }
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.3 });
+  setInterval(nextSlide, 5000);
 
-sections.forEach(section => observer.observe(section));
+  // Scroll reveal animation
+  const sections = document.querySelectorAll('.section');
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  sections.forEach(section => observer.observe(section));
+});
