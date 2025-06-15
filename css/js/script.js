@@ -5,14 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-        obs.unobserve(entry.target);
+        obs.unobserve(entry.target); // pour ne pas répéter l'animation
       }
     });
   }, {
     threshold: 0.2
   });
 
-  texts.forEach(text => {
-    observer.observe(text);
-  });
+  texts.forEach(text => observer.observe(text));
 });
