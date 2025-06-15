@@ -3,8 +3,7 @@
   box-sizing: border-box;
 }
 body, html {
-  margin: 0;
-  padding: 0;
+  margin: 0; padding: 0;
   font-family: 'Montserrat', sans-serif;
   color: #1E1E1E;
   background: #fff;
@@ -34,8 +33,7 @@ nav ul {
   display: flex;
   gap: 25px;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 0; padding: 0;
 }
 nav a {
   font-weight: 700;
@@ -61,7 +59,7 @@ nav a:hover {
 .hero-background {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-image: url('../images/collage.jpg');
+  background-image: url('../images/collage.jpg'); /* ton collage photos */
   background-size: cover;
   background-position: center;
   filter: brightness(0.35);
@@ -85,7 +83,7 @@ nav a:hover {
 .section-hero h1 {
   font-size: 4rem;
   margin: 0 0 10px;
-  color: #F36F21;
+  color: #F36F21; /* orange */
   text-shadow: 0 2px 10px rgba(0,0,0,0.6);
 }
 .section-hero p {
@@ -94,36 +92,34 @@ nav a:hover {
   text-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
 
-/* Main layout */
+/* Main Sections */
 main {
   max-width: 1200px;
   margin: auto;
   padding: 60px 20px;
 }
 
-/* Section layout */
 .section {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 40px;
   margin-bottom: 80px;
-
-  opacity: 0;
-  transform: translateY(60px);
-  transition: opacity 0.6s ease-out, transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-}
-.section.visible {
-  opacity: 1;
-  transform: translateY(0);
 }
 
-.section-left .text { order: 1; }
-.section-left .image { order: 2; }
-.section-right .text { order: 2; }
-.section-right .image { order: 1; }
+.section-left .text {
+  order: 1;
+}
+.section-left .image {
+  order: 2;
+}
+.section-right .text {
+  order: 2;
+}
+.section-right .image {
+  order: 1;
+}
 
-/* Text + image styles */
 .text {
   flex: 1;
   max-width: 600px;
@@ -152,15 +148,15 @@ main {
   height: auto;
 }
 
-/* Bouton */
+/* Buttons */
 .btn-primary {
   display: inline-block;
   padding: 14px 40px;
-  background-color: #00AEEF;
+  background-color: #00AEEF; /* bleu clair IMT */
   color: white;
   font-weight: 700;
   border-radius: 15px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
 }
 .btn-primary:hover {
   background-color: #007fa5;
@@ -168,9 +164,8 @@ main {
 
 /* Footer */
 footer {
-  background: #f7f7f7;
   text-align: center;
-  padding: 30px;
+  padding: 20px 0;
+  color: #666;
   font-size: 0.9rem;
-  color: #777;
 }
