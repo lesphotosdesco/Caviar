@@ -3,7 +3,8 @@
   box-sizing: border-box;
 }
 body, html {
-  margin: 0; padding: 0;
+  margin: 0;
+  padding: 0;
   font-family: 'Montserrat', sans-serif;
   color: #1E1E1E;
   background: #fff;
@@ -33,7 +34,8 @@ nav ul {
   display: flex;
   gap: 25px;
   list-style: none;
-  margin: 0; padding: 0;
+  margin: 0;
+  padding: 0;
 }
 nav a {
   font-weight: 700;
@@ -59,7 +61,7 @@ nav a:hover {
 .hero-background {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-image: url('../images/collage.jpg'); /* ton collage photos */
+  background-image: url('../images/collage.jpg'); /* ton collage photo */
   background-size: cover;
   background-position: center;
   filter: brightness(0.35);
@@ -83,7 +85,7 @@ nav a:hover {
 .section-hero h1 {
   font-size: 4rem;
   margin: 0 0 10px;
-  color: #F36F21; /* orange */
+  color: #F36F21;
   text-shadow: 0 2px 10px rgba(0,0,0,0.6);
 }
 .section-hero p {
@@ -92,13 +94,12 @@ nav a:hover {
   text-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
 
-/* Main Sections */
+/* Main Content */
 main {
   max-width: 1200px;
   margin: auto;
   padding: 60px 20px;
 }
-
 .section {
   display: flex;
   align-items: center;
@@ -106,7 +107,6 @@ main {
   gap: 40px;
   margin-bottom: 80px;
 }
-
 .section-left .text {
   order: 1;
 }
@@ -119,7 +119,6 @@ main {
 .section-right .image {
   order: 1;
 }
-
 .text {
   flex: 1;
   max-width: 600px;
@@ -148,7 +147,7 @@ main {
   height: auto;
 }
 
-/* Buttons */
+/* CTA Button */
 .btn-primary {
   display: inline-block;
   padding: 14px 40px;
@@ -156,16 +155,27 @@ main {
   color: white;
   font-weight: 700;
   border-radius: 15px;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
 }
 .btn-primary:hover {
   background-color: #007fa5;
 }
 
+/* Section Separator (horizontal bar) */
+.separator {
+  border: none;
+  border-top: 3px solid #F36F21; /* orange IMT */
+  margin: 80px auto;
+  width: 80%;
+  max-width: 1000px;
+}
+
 /* Footer */
 footer {
+  background-color: #f5f5f5;
   text-align: center;
-  padding: 20px 0;
-  color: #666;
-  font-size: 0.9rem;
+  padding: 30px 20px;
+  font-size: 0.95rem;
+  color: #888;
+  margin-top: 100px;
 }
