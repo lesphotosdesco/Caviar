@@ -20,7 +20,7 @@ header {
   position: sticky;
   top: 0;
   background: white;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   z-index: 100;
   display: flex;
   align-items: center;
@@ -43,7 +43,7 @@ nav a {
   transition: color 0.3s;
 }
 nav a:hover {
-  color: #F36F21; /* orange */
+  color: #F36F21; /* orange Mines */
 }
 
 /* Hero Section */
@@ -61,7 +61,7 @@ nav a:hover {
 .hero-background {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-image: url('../images/collage.jpg'); /* ton collage photo */
+  background-image: url('../images/collage.jpg');
   background-size: cover;
   background-position: center;
   filter: brightness(0.35);
@@ -86,15 +86,15 @@ nav a:hover {
   font-size: 4rem;
   margin: 0 0 10px;
   color: #F36F21;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
 }
 .section-hero p {
   font-size: 1.5rem;
   font-weight: 500;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
-/* Main Content */
+/* Main */
 main {
   max-width: 1200px;
   margin: auto;
@@ -106,8 +106,14 @@ main {
   justify-content: space-between;
   gap: 40px;
   margin-bottom: 80px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #ddd; /* ligne de séparation */
+}
+.section:last-child {
+  border-bottom: none;
 }
 
+/* Section centered (image au-dessus du texte) */
 .section-centered {
   flex-direction: column;
   text-align: center;
@@ -121,6 +127,7 @@ main {
   margin-bottom: 30px;
 }
 
+/* Alternance gauche-droite */
 .section-left .text {
   order: 1;
 }
@@ -133,6 +140,8 @@ main {
 .section-right .image {
   order: 1;
 }
+
+/* Text and image styles */
 .text {
   flex: 1;
   max-width: 600px;
@@ -156,12 +165,12 @@ main {
 .image img {
   width: 100%;
   border-radius: 12px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   object-fit: cover;
   height: auto;
 }
 
-/* CTA Button */
+/* Boutons */
 .btn-primary {
   display: inline-block;
   padding: 14px 40px;
@@ -175,21 +184,11 @@ main {
   background-color: #007fa5;
 }
 
-/* Section Separator (horizontal bar) */
-.separator {
-  border: none;
-  border-top: 3px solid #F36F21; /* orange IMT */
-  margin: 80px auto;
-  width: 80%;
-  max-width: 1000px;
-}
-
 /* Footer */
 footer {
-  background-color: #f5f5f5;
   text-align: center;
-  padding: 30px 20px;
-  font-size: 0.95rem;
-  color: #888;
-  margin-top: 100px;
+  padding: 40px 20px;
+  background: #f9f9f9;
+  font-size: 0.9rem;
+  color: #555;
 }
