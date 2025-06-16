@@ -16,6 +16,12 @@ a {
   color: inherit;
 }
 
+
+
+
+
+
+
 /* Header */
 header {
   position: sticky;
@@ -44,8 +50,19 @@ nav a {
   transition: color 0.3s;
 }
 nav a:hover {
-  color: #00AEEF; /* orange Mines */
+  color: #00AEEF; 
 }
+
+
+
+
+
+
+
+
+
+
+
 
 /* Hero Section */
 .section-hero {
@@ -89,6 +106,25 @@ nav a:hover {
   font-weight: 500;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Main */
 main {
@@ -176,6 +212,21 @@ main {
 .btn-primary:hover {
   background-color: #F36F21;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Footer */
 footer {
