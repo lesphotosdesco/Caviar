@@ -6,7 +6,7 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  color: #1E1E1E;
+  color: #F36F21;
   background: #fff;
   scroll-behavior: smooth;
 }
@@ -39,11 +39,11 @@ nav ul {
 }
 nav a {
   font-weight: 700;
-  color: #1E1E1E;
+  color: #F36F21;
   transition: color 0.3s;
 }
 nav a:hover {
-  color: #F36F21; /* orange Mines */
+  color: #1E1E1E; /* orange Mines */
 }
 
 /* Hero Section */
@@ -85,7 +85,7 @@ nav a:hover {
 .section-hero h1 {
   font-size: 4rem;
   margin: 0 0 10px;
-  color: #F36F21;
+  color: #1E1E1E;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
 }
 .section-hero p {
@@ -149,7 +149,7 @@ main {
 }
 .text h2 {
   font-size: 2.5rem;
-  color: #F36F21;
+  color: #1E1E1E;
   margin-bottom: 15px;
 }
 .text p {
