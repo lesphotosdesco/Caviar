@@ -164,8 +164,8 @@ main {
 /* Section Separator (horizontal bar) */
 .separator {
   border: none;
-  border-top: 3px solid #F36F21; /* orange IMT */
-  margin: 80px auto;
+  border-top: 5px solid #F36F21; /* orange IMT */
+  margin: 150px auto;
   width: 80%;
   max-width: 1000px;
 }
