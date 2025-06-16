@@ -207,11 +207,11 @@ main {
 
 
 
-
 .carousel {
   position: relative;
   width: 100%;
-  height: 500px;
+  /* Pour ratio 3:2, hauteur = largeur / 1.5 */
+  aspect-ratio: 3 / 2;  /* Ajouté : fixe le ratio sans fixer la hauteur */
   overflow: hidden;
   border-radius: 12px;
 }
@@ -219,7 +219,7 @@ main {
 .carousel-images {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 100%; /* Rempli le conteneur selon aspect-ratio */
 }
 
 .carousel-images img {
@@ -227,8 +227,9 @@ main {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; /* Hauteur vraiment fixe ici */
-  object-fit: contain;
+  height: 100%;
+  object-fit: contain; /* Garde le ratio sans couper */
+  object-position: center;
   opacity: 0;
   transition: opacity 1s ease;
   z-index: 0;
@@ -281,9 +282,6 @@ main {
 .carousel-arrow.next {
   right: 10px;
 }
-
-
-
 
 
 
