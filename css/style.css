@@ -99,12 +99,13 @@ nav a:hover {
 .section-hero h1 {
   font-size: 4rem;
   margin: 0 0 10px;
-  color: #F36F21;
+  color: #00AEEF;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
 }
 .section-hero p {
   font-size: 1.5rem;
   font-weight: 500;
+    color: #F36F21;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
