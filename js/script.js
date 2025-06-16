@@ -1,56 +1,38 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const images = document.querySelectorAll(".carousel-images img");
-  const prevBtn = document.querySelector(".carousel-btn.prev");
-  const nextBtn = document.querySelector(".carousel-btn.next");
-  const dots = document.querySelectorAll(".carousel-dots .dot");
-  let current = 0;
-  let interval;
+const images = document.querySelectorAll('.carousel-images img');
+const dots = document.querySelectorAll('.carousel-dots .dot');
+let currentIndex = 0;
+let interval;
 
-  function showImage(index) {
-    images.forEach((img, i) => img.classList.toggle("active", i === index));
-    dots.forEach((dot, i) => dot.classList.toggle("active", i === index));
-    current = index;
-  }
-
-  function nextImage() {
-    const next = (current + 1) % images.length;
-    showImage(next);
-  }
-
-  function prevImage() {
-    const prev = (current - 1 + images.length) % images.length;
-    showImage(prev);
-  }
-
-  function startAutoSlide() {
-    interval = setInterval(nextImage, 5000);
-  }
-
-  function stopAutoSlide() {
-    clearInterval(interval);
-  }
-
-  nextBtn.addEventListener("click", () => {
-    nextImage();
-    stopAutoSlide();
-    startAutoSlide();
+// Fonction pour afficher l'image et le point actif
+function showSlide(index) {
+  images.forEach((img, i) => {
+    img.classList.toggle('active', i === index);
   });
-
-  prevBtn.addEventListener("click", () => {
-    prevImage();
-    stopAutoSlide();
-    startAutoSlide();
+  dots.forEach((dot, i) => {
+    dot.classList.toggle('active', i === index);
   });
+  currentIndex = index;
+}
 
-  dots.forEach(dot => {
-    dot.addEventListener("click", (e) => {
-      const index = parseInt(dot.getAttribute("data-index"));
-      showImage(index);
-      stopAutoSlide();
-      startAutoSlide();
-    });
+// Passe à l’image suivante
+function nextSlide() {
+  const nextIndex = (currentIndex + 1) % images.length;
+  showSlide(nextIndex);
+}
+
+// Reset le timer auto quand on clique sur un point
+function resetInterval() {
+  clearInterval(interval);
+  interval = setInterval(nextSlide, 5000); // 5 secondes
+}
+
+// Dots cliquables
+dots.forEach((dot, index) => {
+  dot.addEventListener('click', () => {
+    showSlide(index);
+    resetInterval();
   });
-
-  showImage(current);
-  startAutoSlide();
 });
+
+// Lancement du défilement auto
+interval = setInterval(nextSlide, 5000);
