@@ -107,6 +107,20 @@ main {
   gap: 40px;
   margin-bottom: 80px;
 }
+
+.section-centered {
+  flex-direction: column;
+  text-align: center;
+}
+.section-centered .image,
+.section-centered .text {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.section-centered .image {
+  margin-bottom: 30px;
+}
+
 .section-left .text {
   order: 1;
 }
