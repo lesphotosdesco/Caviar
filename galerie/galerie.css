@@ -42,12 +42,14 @@ main {
   text-decoration: none;
 }
 
+
+/* La date à droite */
 .event-date {
   font-size: 0.85em;
   color: #888;
-  margin-left: 0.5em;
+  margin-left: 1em;
+  white-space: nowrap;
 }
-
 
 .collapsible::after {
   content: '▼';
