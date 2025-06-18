@@ -71,8 +71,9 @@ main {
 .collapsible .event-date {
   order: 1; /* après le titre */
   white-space: nowrap;
-  color: #00AEEF;
-  font-weight: 600;
+  font-size: 0.85em;
+  color: #888;
+  margin-left: 1em;
 }
 
 .collapsible::after {
