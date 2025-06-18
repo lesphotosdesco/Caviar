@@ -55,16 +55,36 @@ main {
   white-space: nowrap;
 }
 
-.collapsible::after {
-  content: '▼';
-  float: right;
-  transition: transform 0.3s;
-  color: #00AEEF;
+.collapsible {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: flex-start; /* on aligne au début */
+  gap: 0.5em; /* espace entre éléments */
+  position: relative; /* pour que ::after se place bien */
 }
 
-.collapsible.active::after {
-  transform: rotate(180deg);
+.collapsible .event-title {
+  flex-grow: 1; /* occupe tout l’espace à gauche */
 }
+
+.collapsible .event-date {
+  order: 1; /* après le titre */
+  white-space: nowrap;
+  color: #00AEEF;
+  font-weight: 600;
+}
+
+.collapsible::after {
+  content: '▼';
+  order: 2; /* après la date */
+  margin-left: 0.5em;
+  color: #00AEEF;
+  font-size: 0.9em;
+  user-select: none;
+  position: static; /* s’assure que la flèche reste à la fin */
+}
+
 
 .content {
   display: none;
