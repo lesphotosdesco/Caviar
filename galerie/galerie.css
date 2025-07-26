@@ -1,105 +1,59 @@
-body {
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #FFFFFF; /* Blanc pur */
-  color: #333;
-}
-
-h2 {
-  color: #00AEEF; /* Bleu */
-}
-
-header {
-  background-color: #00AEEF; /* Bleu */
-  color: white;
-  padding: 1em;
-  text-align: center;
-}
-
-main {
-  padding: 2em;
-}
-
-.event, .collapsible {
-  margin: 0.75em 0;
-  padding: 1em;
-  background: #FFFFFF;
-  border-left: 5px solid #F36F21; /* Orange */
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  transition: background 0.3s, transform 0.2s;
-}
-
-.event:hover {
-  background: #f0f8ff; /* bleu très clair au hover */
-  transform: translateY(-2px);
-}
-
-.event a {
+/* Onglets */
+.tabs {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  color: #333;
-  font-weight: 500;
-  text-decoration: none;
+  justify-content: center;
+  gap: 1em;
+  background: #f9f9f9;
+  padding: 1em;
+  border-bottom: 2px solid #eee;
 }
 
-
-/* La date à droite */
-.event-date {
-  font-size: 0.85em;
-  color: #888;
-  margin-left: 1em;
-  white-space: nowrap;
-}
-
-.collapsible {
-  display: flex;
-  align-items: center;
+.tab-button {
+  background: none;
+  border: 2px solid #00AEEF;
+  color: #00AEEF;
+  padding: 0.5em 1.2em;
+  font-weight: bold;
+  border-radius: 30px;
   cursor: pointer;
-  justify-content: flex-start; /* on aligne au début */
-  gap: 0.5em; /* espace entre éléments */
-  position: relative; /* pour que ::after se place bien */
+  transition: background 0.3s;
 }
 
-.collapsible .event-title {
-  flex-grow: 1; /* occupe tout l’espace à gauche */
+.tab-button.active {
+  background: #00AEEF;
+  color: white;
 }
 
-.collapsible .event-date {
-  order: 1; /* après le titre */
-  white-space: nowrap;
-  font-size: 0.85em;
-  color: #888;
-  margin-left: 1em;
+/* Sections d'année */
+.year-section {
+  display: none;
+  animation: fadeIn 0.5s ease-in-out;
 }
 
+.year-section.active {
+  display: block;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Flèche animée */
 .collapsible::after {
   content: '▼';
-  order: 2; /* après la date */
-  margin-left: 0.5em;
   color: #00AEEF;
   font-size: 0.9em;
-  user-select: none;
-  position: static; /* s’assure que la flèche reste à la fin */
+  margin-left: auto;
+  transition: transform 0.3s ease;
 }
 
+.collapsible.active::after {
+  transform: rotate(180deg);
+}
 
-.content {
+/* Supprimer les dates */
+.event-date {
   display: none;
-  margin-left: 1.5em;
-  margin-top: 0.5em;
-  padding: 0.75em 1em;
-  background: #F8F8F8;
-  border-left: 3px solid #F36F21; /* Orange */
-  border-radius: 6px;
-}
-
-.content a {
-  display: block;
-  margin: 0.3em 0;
-  color: #00AEEF; /* Bleu */
-  text-decoration: underline;
 }
