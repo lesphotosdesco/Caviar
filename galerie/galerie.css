@@ -123,8 +123,3 @@ main {
   color: #00AEEF;
   text-decoration: underline;
 }
-
-/* Supprime complètement les dates */
-.event-date {
-  display: none;
-}
