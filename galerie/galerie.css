@@ -1,3 +1,26 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #FFFFFF;
+  color: #333;
+}
+
+h2 {
+  color: #00AEEF;
+}
+
+header {
+  background-color: #00AEEF;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+main {
+  padding: 2em;
+}
+
 /* Onglets */
 .tabs {
   display: flex;
@@ -24,7 +47,7 @@
   color: white;
 }
 
-/* Sections d'année */
+/* Affichage par année */
 .year-section {
   display: none;
   animation: fadeIn 0.5s ease-in-out;
@@ -34,13 +57,44 @@
   display: block;
 }
 
-/* Animation */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
+.event, .collapsible {
+  margin: 0.75em 0;
+  padding: 1em;
+  background: #FFFFFF;
+  border-left: 5px solid #F36F21;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.event:hover {
+  background: #f0f8ff;
+  transform: translateY(-2px);
+}
+
+.event a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+}
+
 /* Flèche animée */
+.collapsible {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
 .collapsible::after {
   content: '▼';
   color: #00AEEF;
@@ -53,7 +107,24 @@
   transform: rotate(180deg);
 }
 
-/* Supprimer les dates */
+.content {
+  display: none;
+  margin-left: 1.5em;
+  margin-top: 0.5em;
+  padding: 0.75em 1em;
+  background: #F8F8F8;
+  border-left: 3px solid #F36F21;
+  border-radius: 6px;
+}
+
+.content a {
+  display: block;
+  margin: 0.3em 0;
+  color: #00AEEF;
+  text-decoration: underline;
+}
+
+/* Supprime complètement les dates */
 .event-date {
   display: none;
 }
