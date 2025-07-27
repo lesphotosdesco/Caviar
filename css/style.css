@@ -339,7 +339,7 @@ footer {
   font-size: 1.2rem;
   color: #F36F21;
   font-weight: bold;
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .instagram a:hover {
@@ -356,4 +356,69 @@ footer {
   .team-member {
     max-width: 90%;
   }
+}
+
+
+
+/* Services page - réservation matériel */
+
+.page-content {
+  max-width: 800px;
+  margin: 60px auto 80px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.page-content h1 {
+  font-size: 2.8rem;
+  color: #00AEEF;
+  margin-bottom: 25px;
+}
+
+.service-step {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 25px 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.service-step:hover {
+  transform: translateY(-3px);
+}
+
+.service-step h2 {
+  color: #F36F21;
+  margin-bottom: 12px;
+  font-size: 1.8rem;
+}
+
+.service-step p {
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 14px 40px;
+  background-color: #F36F21;
+  color: white;
+  font-weight: 700;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.btn-primary:hover {
+  background-color: #00AEEF;
+}
+
+/* Style spécifique pour la partie inventaire */
+.alert-inventory {
+  border: 2px solid #00AEEF;
+  background: #e6f7ff;
 }
