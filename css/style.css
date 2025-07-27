@@ -14,26 +14,21 @@ body, html {
 a {
   text-decoration: none;
   color: inherit;
+  transition: color 0.3s ease; /* Ajouté : transition douce sur les liens */
 }
-
-
-
-
-
-
 
 /* Header */
 header {
   position: sticky;
   top: 0;
   background: white; 
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
   z-index: 100;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 15px 40px;
-  border-bottom: 2px solid #00AEEF;
+  border-bottom: 2px solid #00AEEF; /* Ligne fine bleue en bas du header */
 }
 
 .logo img {
@@ -54,17 +49,6 @@ nav a {
 nav a:hover {
   color: #00AEEF; 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* Hero Section */
 .section-hero {
@@ -106,28 +90,9 @@ nav a:hover {
 .section-hero p {
   font-size: 1.5rem;
   font-weight: 500;
-    color: #F36F21;
+  color: #F36F21;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Main */
 main {
@@ -202,17 +167,11 @@ main {
   height: auto;
 }
 
-
-
-
-
-
-
+/* Carousel */
 .carousel {
   position: relative;
   width: 100%;
-  /* Pour ratio 3:2, hauteur = largeur / 1.5 */
-  aspect-ratio: 3 / 2;  /* Ajouté : fixe le ratio sans fixer la hauteur */
+  aspect-ratio: 3 / 2;  /* fixe ratio sans fixer la hauteur */
   overflow: hidden;
   border-radius: 12px;
 }
@@ -220,7 +179,7 @@ main {
 .carousel-images {
   position: relative;
   width: 100%;
-  height: 100%; /* Rempli le conteneur selon aspect-ratio */
+  height: 100%;
 }
 
 .carousel-images img {
@@ -229,7 +188,7 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Garde le ratio sans couper */
+  object-fit: contain;
   object-position: center;
   opacity: 0;
   transition: opacity 1s ease;
@@ -284,10 +243,6 @@ main {
   right: 10px;
 }
 
-
-
-
-
 /* Buttons */
 .btn-primary {
   display: inline-block;
@@ -299,12 +254,8 @@ main {
   transition: background-color 0.3s ease;
 }
 .btn-primary:hover {
-  background-color: #F36F21;
+  background-color: #d95d17; /* Modifié : léger assombrissement au hover */
 }
-
-
-
-
 
 /* Footer */
 footer {
@@ -315,13 +266,7 @@ footer {
   color: #555;
 }
 
-
-
-
-
-/* Contact */
-
-/* Section équipe */
+/* Contact / Section équipe */
 .team {
   display: flex;
   justify-content: center;
@@ -368,12 +313,14 @@ footer {
   color: #00AEEF;
   font-weight: 600;
   text-decoration: none;
+  transition: color 0.3s ease; /* Ajouté : transition douce sur les liens */
 }
 
 .team-member a:hover {
   text-decoration: underline;
 }
 
+/* Instagram section */
 .instagram {
   text-align: center;
   margin-top: 40px;
@@ -396,3 +343,14 @@ footer {
   text-decoration: underline;
 }
 
+/* Responsive : adaptation de la section équipe sur petits écrans */
+@media (max-width: 768px) {
+  .team {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .team-member {
+    max-width: 90%;
+  }
+}
