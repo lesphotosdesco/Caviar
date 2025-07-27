@@ -287,18 +287,6 @@ main {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* Buttons */
 .btn-primary {
   display: inline-block;
@@ -317,17 +305,6 @@ main {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* Footer */
 footer {
   text-align: center;
@@ -335,4 +312,90 @@ footer {
   background: #f9f9f9;
   font-size: 0.9rem;
   color: #555;
+}
+
+
+
+
+
+/* Contact */
+
+/* Section équipe */
+.team {
+  margin-top: 3em;
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-member {
+  background: white;
+  border: 2px solid #F36F21;
+  border-radius: 12px;
+  padding: 1.5em;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.team-member img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1em;
+  border: 3px solid #00AEEF;
+}
+
+.team-member h3 {
+  color: #00AEEF;
+  margin-bottom: 0.3em;
+}
+
+.team-member p {
+  margin: 0.3em 0;
+  color: #333;
+}
+
+.team-member a {
+  color: #F36F21;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 0.5em;
+}
+
+.team-member a:hover {
+  color: #00AEEF;
+  text-decoration: underline;
+}
+
+/* Section Instagram */
+.instagram {
+  margin-top: 4em;
+  text-align: center;
+}
+
+.instagram h2 {
+  color: #00AEEF;
+  margin-bottom: 0.5em;
+}
+
+.instagram a {
+  font-size: 1.5rem;
+  color: #F36F21;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.instagram a:hover {
+  color: #00AEEF;
+  text-decoration: underline;
 }
