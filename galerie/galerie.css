@@ -16,10 +16,6 @@ a {
   color: inherit;
 }
 
-
-
-
-
 /* Header */
 header {
   position: sticky;
@@ -52,15 +48,7 @@ nav a:hover {
   color: #00AEEF; 
 }
 
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #FFFFFF;
-  color: #333;
-}
-
+/* Général */
 h2 {
   color: #00AEEF;
 }
@@ -110,6 +98,7 @@ main {
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* Albums */
 .event, .collapsible {
   margin: 0.75em 0;
   padding: 1em;
@@ -155,6 +144,7 @@ main {
   transform: rotate(180deg);
 }
 
+/* Sous-albums */
 .content {
   display: none;
   margin-left: 1.5em;
