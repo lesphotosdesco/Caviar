@@ -102,7 +102,7 @@ main {
 .event, .collapsible {
   margin: 0.75em 0;
   padding: 1em;
-  background: #33C8F4;
+  background: #FFFFFF;
   border-left: 5px solid #F36F21;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
@@ -150,7 +150,7 @@ main {
   margin-left: 1.5em;
   margin-top: 0.5em;
   padding: 0.75em 1em;
-  background: #99E3FA;
+  background: #F8F8F8;
   border-left: 3px solid #F36F21;
   border-radius: 6px;
 }
