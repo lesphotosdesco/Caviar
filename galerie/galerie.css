@@ -45,8 +45,13 @@ nav a {
   color: #F36F21;
   transition: color 0.3s;
 }
-nav a:hover {
-  color: #00AEEF; 
+nav a {
+  font-weight: 700;
+  color: #F36F21;
+  transition: color 0.3s;
+  font-size: 16px;       /* Fixe la taille pour éviter les variations */
+  line-height: 1.5;      /* Fixe la hauteur de ligne pour cohérence */
+  display: inline-block; /* Pour éviter que le texte "saute" */
 }
 
 /* Général */
