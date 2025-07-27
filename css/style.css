@@ -33,6 +33,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 15px 40px;
+  border-bottom: 2px solid #00AEEF;
 }
 
 .logo img {
